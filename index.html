@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prova IO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h2>Prova IO</h2>
+
+      <ul>
+        <li><a href="#form-container" id="about">Cadastro</a></li>
+        <li><a href="#address-results-content" id="home">Produtos</a></li>
+      </ul>
+    </nav>
+    <div id="container">
+      <div id="title">
+        <h2>Cadadastro de produtos:</h2>
+        <!-- <img src="images/clouds.svg" alt="" /> -->
+      </div>
+
+      <div id="form-container">
+        <div id="form-content">
+          <form
+            id="form"
+            action=""
+            method="post"
+          >
+            <label for="name">Nome:</label><br />
+            <input
+              type="text"
+              placeholder="Insira o nome do produto:"
+              name="name"
+              required
+            /><br />
+            <label for="description">Descrição:</label><br />
+            <input
+              type="text"
+              placeholder="Insira descrição do produto:"
+              name="description"
+              required
+            /><br />
+            <label for="category">Categoria:</label><br />
+            <select
+              type="select"
+              placeholder="Insira o CEP"
+              name="category"
+              required
+            >
+              <option value="Categoria 1" selected>Categoria 1</option>
+              <option value="Categoria 2">Categoria 2</option>
+              <option value="Categoria 3">Categoria 3</option></select
+            ><br />
+
+            <label for="price">Preço:</label><br />
+            <input
+              class="latlong"
+              type="text"
+              placeholder="Insira o valor do produto: "
+              name="price"
+              required
+            />
+            <br />
+            <input
+              type="hidden"
+              name="Created"
+              value="x-sheetmonkey-current-date-time"
+            />
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="results">
+        <div class="address-results-title">
+          <h1>Produtos Cadastrados:</h1>
+          <!-- <img src="images/loc.svg" alt="" /> -->
+        </div>
+
+        <div id="address-results-content">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+
+    <div id="footer">
+      <p>Desenvolvido por Mateus Bittencourt</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
